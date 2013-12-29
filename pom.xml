@@ -13,12 +13,12 @@
   <url>http://www.adopus.com/purej</url>
 
   <properties>
-    <!-- Project encoding - Same for all EAI Central Services -->
+    <!-- Project encoding - Same for all purej projects -->
     <project.encoding>UTF-8</project.encoding>
     <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
-    <!-- Jdk Version - Might be overwritten by extending POMs -->
+    <!-- Jdk Version - might be overwritten by extending projects -->
     <jdkVersion>1.6</jdkVersion>
   </properties>
 
@@ -54,7 +54,7 @@
 
   <build>
 
-    <!-- This section configures the versions of the commonly used Maven-Plugins -->
+    <!-- This section configures the versions and global settings of the commonly used (maven-)plugins -->
     <pluginManagement>
       <plugins>
 
@@ -166,7 +166,7 @@
           </executions>
         </plugin>
 
-        <!-- Stores eclipse m2e settings to prevent warnings -->
+        <!-- Stores m2e settings to prevent eclipse-warnings -->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
           <artifactId>lifecycle-mapping</artifactId>
@@ -210,7 +210,7 @@
 
     <plugins>
 
-      <!-- Configures the maven-source plugin to have a source-jar always -->
+      <!-- Executes the maven-source plugin to have a source-jar always -->
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
         <executions>
@@ -224,7 +224,7 @@
         </executions>
       </plugin>
 
-      <!-- Configures the have a javadoc-jar always -->
+      <!-- Executes the have a javadoc-jar always -->
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <executions>
@@ -238,7 +238,7 @@
         </executions>
       </plugin>
 
-      <!-- The maven-enforcer plugin ensure that there are no dependency  conflicts -->
+      <!-- Executes the maven-enforcer plugin to ensure that there are no dependency conflicts -->
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
@@ -262,7 +262,7 @@
         </executions>
       </plugin>
 
-      <!-- Configures the GPG plugin to sign the files (required by maven central uploads) -->
+      <!-- Executes the GPG plugin to sign the files (required by maven central uploads) -->
       <plugin>
         <artifactId>maven-gpg-plugin</artifactId>
         <executions>
@@ -276,43 +276,8 @@
         </executions>
       </plugin>
 
-      <!-- Configures the maven-site plugin -->
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.3</version>
-        <inherited>false</inherited>
-        <executions>
-          <execution>
-            <id>attach-descriptor</id>
-            <goals>
-              <goal>attach-descriptor</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
     </plugins>
 
   </build>
-
-  <reporting>
-    <plugins>
-
-      <!-- Configure the maven-report plugin -->
-      <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>index</report>
-              <report>modules</report>
-              <report>summary</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-
-    </plugins>
-  </reporting>
 
 </project>
