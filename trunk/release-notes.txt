@@ -1,6 +1,6 @@
 Version 1.1 (29.12.2013)
 - Moved to code.google.com
-- Added license terms, scm and devloper section
+- Added license terms, scm and developer section
 - Removed site plugin configuration
 
 Version 1.0 (28.12.2013)
