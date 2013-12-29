@@ -10,7 +10,7 @@
 
   <name>PureJ parent POM</name>
   <description>The maven parent POM for com.purej projects</description>
-  <url>http://www.purej.com</url>
+  <url>http://www.adopus.com/purej</url>
 
   <properties>
     <!-- Project encoding - Same for all EAI Central Services -->
@@ -25,15 +25,32 @@
   <inceptionYear>2013</inceptionYear>
   <organization>
     <name>Stefan Mueller, adopus consulting gmbh</name>
-    <url>http://www.purej.com/</url>
+    <url>http://www.adopus.com/purej</url>
   </organization>
 
   <licenses>
     <license>
       <name>The BSD 3-Clause License</name>
-      <url>license.txt</url>
+      <url>http://www.opensource.org/licenses/BSD-3-Clause</url>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <name>Stefan Mueller</name>
+      <email>stefan.purej@gmail.com</email>
+      <organization>adopus consulting gmbh, Switzerland</organization>
+      <roles>
+        <role>Owner</role>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:svn:http://purej-parent.googlecode.com/svn/trunk</connection>
+    <url>http://purej-parent.googlecode.com/svn/trunk</url>
+  </scm>
 
   <build>
 
