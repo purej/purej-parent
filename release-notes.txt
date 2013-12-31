@@ -1,5 +1,6 @@
 Version 1.2 (31.12.2013)
 - Using sonatype repositories for snapshot and release deploys (https://oss.sonatype.org/)
+- javadoc-plugin uses jar goal
 
 Version 1.1 (29.12.2013)
 - Moved to code.google.com
