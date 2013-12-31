@@ -6,4 +6,4 @@
 *Version 1.1 (29.12.2013)*
 || *File* || *Size* || *Summary* ||
 ||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.1/license.txt license.txt]||<1kb||||
-||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.1/pom.xml pom.xml]||<1kb||||
+||[https://purej-parent.googlecode.com/svn/tags/purej-parent-1.1/pom.xml pom.xml]||<1kb||||
