@@ -1,5 +1,4 @@
-===Version 1.2===
-Date: (31.12.2013)
+*Version 1.2 (31.12.2013)*
 ||*File*||*Size*||*Summary*||
 ||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/license.txt license.txt]||<1kb||||
 ||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/pom.xml pom.xml]||<1kb||||
