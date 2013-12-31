@@ -1,20 +1,9 @@
 #summary One-sentence summary of this page.
 
-*Version 1.1*
-  * [https://purej-parent.googlecode.com/svn/wiki/downloads/license.txt license.txt]
-  * [https://purej-parent.googlecode.com/svn/wiki/downloads/pom.xml pom.xml]
+*Version 1.2 (31.12.2013)*
+  * [https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/license.txt license.txt]
+  * [https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/pom.xml pom.xml]
 
-
-
-
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Version 1.1 (29.12.2013)*
+  * [https://purej-parent.googlecode.com/svn/wiki/downloads/1.1/license.txt license.txt]
+  * [https://purej-parent.googlecode.com/svn/wiki/downloads/1.1/pom.xml pom.xml]
