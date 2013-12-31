@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-[Downloads http://purej-parent.googlecode.com/svn/wiki/downloads/xxx.pom]
+[https://purej-parent.googlecode.com/svn/wiki/downloads/xxx.pom Downloads]
 
 
 = Introduction =
