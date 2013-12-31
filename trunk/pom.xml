@@ -4,7 +4,7 @@
 
   <groupId>com.purej</groupId>
   <artifactId>purej-parent</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>PureJ parent POM</name>
@@ -47,8 +47,8 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:http://purej-parent.googlecode.com/svn/trunk</connection>
-    <url>http://purej-parent.googlecode.com/svn/trunk</url>
+    <connection>scm:svn:http://purej-parent.googlecode.com/svn/tags/purej-parent-1.2</connection>
+    <url>http://purej-parent.googlecode.com/svn/tags/purej-parent-1.2</url>
   </scm>
 
   <!-- This section configures the snapshot / release repositories -->
