@@ -1,7 +1,7 @@
 *Version 1.2 (31.12.2013)*
-||*File*||*Summary*||
-||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/license.txt license.txt]||||
-||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/pom.xml pom.xml]||||
+||*File*||*Size*||*Summary*||
+||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/license.txt license.txt]||<1kb||||
+||[https://purej-parent.googlecode.com/svn/wiki/downloads/1.2/pom.xml pom.xml]||<1kb||||
 
 *Version 1.1 (29.12.2013)*
   * [https://purej-parent.googlecode.com/svn/wiki/downloads/1.1/license.txt license.txt]
