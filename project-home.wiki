@@ -1,0 +1,14 @@
+<p align="center">
+https://purej-vminspect.googlecode.com/svn/wiki/pics/purej-logo-48.png
+*<font size="20">parent</font><br/>
+</p>
+
+The Maven parent POM for *com.purej* projects. This POM specifies the versions of commonly used Maven plugins and applies the following non-standard configurations:
+  * compiler-plugin: explicit JDK version, show warnings
+  * jar-plugin: add implementation manifest entries
+
+The following plugins are automatically executed:
+  * source-plugin: to produce a -sources.jar
+  * javadoc-plugin: to produce a -javadoc.jar
+  * enforcer-plugin: to prevent conflicting transitive dependencies
+  * gpg-plugin: to automatically sign generated artefacts (required by maven central)
