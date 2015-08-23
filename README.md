@@ -1,4 +1,4 @@
-![purej-logo](https://cloud.githubusercontent.com/assets/13910123/9427455/ac87593c-497e-11e5-806c-beac4cc50ae3.png) <b>purej-parent</b>
+<h1><img src="https://cloud.githubusercontent.com/assets/13910123/9427455/ac87593c-497e-11e5-806c-beac4cc50ae3.png"/> purej-parent</h1>
 
 The Maven parent POM for <b>com.purej</b> projects. This POM specifies the versions of commonly used Maven plugins and applies the following non-standard configurations:
 
