@@ -37,7 +37,7 @@
   <developers>
     <developer>
       <name>Stefan Mueller</name>
-      <email>stefan.purej@gmail.com</email>
+      <email>s1@muellair.com</email>
       <organization>adopus consulting gmbh, Switzerland</organization>
       <roles>
         <role>Owner</role>
@@ -47,8 +47,8 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:http://purej-parent.googlecode.com/svn/trunk</connection>
-    <url>http://purej-parent.googlecode.com/svn/trunk</url>
+    <connection>scm:git:git://github.com/purej/purej-parent.git</connection>
+    <url>http://github.com/purej/purej-parent</url>
   </scm>
 
   <!-- This section configures the snapshot / release repositories -->
