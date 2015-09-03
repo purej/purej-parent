@@ -4,7 +4,7 @@
 
   <groupId>com.purej</groupId>
   <artifactId>purej-parent</artifactId>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>PureJ parent POM</name>
