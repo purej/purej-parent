@@ -2,8 +2,9 @@
 
 The Maven parent POM for <b>com.purej</b> projects. This POM specifies the versions of commonly used Maven plugins and applies the following non-standard configurations:
 
-* compiler-plugin: explicit JDK version, show warnings
-* jar-plugin: add implementation manifest entries
+* compiler-plugin: configurable JDK version, show warnings
+* jar/war/ear-plugin: add implementation manifest entries automatically
+* javadoc-plugin: works for both Java 1.8 and < 1.8 (using an automatic profile)
 
 The following plugins are automatically executed:
 * source-plugin: to produce a -sources.jar
