@@ -1,20 +1,20 @@
 Version 1.4 (03.09.2015)
-- Javadoc plugin works with both java < 1.8 and java 1.8 (using an automatic profile)
-- Automatic Manifest entries for EARs and WARs
+ - Javadoc plugin works with both java < 1.8 and java 1.8 (using an automatic profile)
+ - Automatic Manifest entries for EARs and WARs
 
 Version 1.3 (29.03.2015)
-- Javadoc plugin fix to work with Java 1.8
+ - Javadoc plugin fix to work with Java 1.8
 
 Version 1.2 (31.12.2013)
-- Using sonatype repositories for snapshot and release deploys (https://oss.sonatype.org/)
-- javadoc-plugin uses jar goal
+ - Using sonatype repositories for snapshot and release deploys (https://oss.sonatype.org/)
+ - javadoc-plugin uses jar goal
 
 Version 1.1 (29.12.2013)
-- Moved to code.google.com
-- Added license terms, scm and developer section
-- Removed site plugin configuration
-- Maven release plugin in forked-mode to prevent pgp-plugin from hanging
+ - Moved to code.google.com
+ - Added license terms, scm and developer section
+ - Removed site plugin configuration
+ - Maven release plugin in forked-mode to prevent pgp-plugin from hanging
 
 Version 1.0 (28.12.2013)
-- Initial version
+ - Initial version
  
