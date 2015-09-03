@@ -1,3 +1,7 @@
+Version 1.4 (03.09.2015)
+- Javadoc plugin works with both java < 1.8 and java 1.8 (using an automatic profile)
+- Automatic Manifest entries for EARs and WARs
+
 Version 1.3 (29.03.2015)
 - Javadoc plugin fix to work with Java 1.8
 
