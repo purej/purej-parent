@@ -1,3 +1,9 @@
+Version 1.5 (03.10.2018)
+ - Upgraded all plugin versions
+ - Added manifest entry for future java 11 module classpath (property module.name MUST be provided!)
+ - Default Jdk version set to 1.8
+ - Removed ejb plugin
+
 Version 1.4 (03.09.2015)
  - Javadoc plugin works with both java < 1.8 and java 1.8 (using an automatic profile)
  - Automatic Manifest entries for EARs and WARs

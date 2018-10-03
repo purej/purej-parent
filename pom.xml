@@ -4,7 +4,7 @@
 
   <groupId>com.purej</groupId>
   <artifactId>purej-parent</artifactId>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <packaging>pom</packaging>
 
   <name>PureJ parent POM</name>
@@ -18,7 +18,10 @@
     <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
     <!-- Jdk Version - might be overwritten by extending projects -->
-    <jdkVersion>1.6</jdkVersion>
+    <jdkVersion>1.8</jdkVersion>
+
+    <!-- Default value - MUST be overwritten by extending projects! -->
+    <module.name>undefined</module.name>
   </properties>
 
   <inceptionYear>2013</inceptionYear>
@@ -52,6 +55,8 @@
   </scm>
 
   <!-- This section configures the snapshot / release repositories -->
+  <!-- Note: The Maven-Settings have to contain the Sonatype user/password 
+    for uploading! -->
   <distributionManagement>
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
@@ -65,38 +70,26 @@
     </repository>
   </distributionManagement>
 
-  <profiles>
-    <!-- This profile fixes the problem that Java 1.8 requires an additional javadoc argument which fails in Java 1.7 and below -->
-    <profile>
-      <id>java8-disable-doclint</id>
-      <activation>
-        <jdk>[1.8,)</jdk>
-      </activation>
-      <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-      </properties>
-    </profile>
-  </profiles>
-
   <build>
 
-    <!-- This section configures the versions and global settings of the commonly used (maven-)plugins -->
+    <!-- This section configures the versions and global settings of the 
+      commonly used (maven-)plugins -->
     <pluginManagement>
       <plugins>
 
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.4</version>
+          <version>3.1.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>2.5</version>
+          <version>3.1.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.1</version>
+          <version>3.8.0</version>
           <configuration>
             <source>${jdkVersion}</source>
             <target>${jdkVersion}</target>
@@ -108,53 +101,56 @@
 
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>2.8</version>
+          <version>3.1.1</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.4</version>
+          <version>3.1.0</version>
           <configuration>
             <archive>
               <manifest>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
+              <manifestEntries>
+                <Automatic-Module-Name>${module.name}</Automatic-Module-Name>
+              </manifestEntries>
             </archive>
           </configuration>
         </plugin>
 
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.1</version>
+          <version>3.0.0-M1</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.3.1</version>
+          <version>3.0.0-M2</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.1</version>
+          <version>3.0.0-M1</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.10.1</version>
+          <version>3.0.1</version>
           <configuration>
             <quiet>true</quiet>
-            <additionalparam>${javadoc.opts}</additionalparam>
+            <doclint>none</doclint>
           </configuration>
         </plugin>
 
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>2.7</version>
+          <version>3.0.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.4.2</version>
+          <version>2.5.3</version>
           <configuration>
             <mavenExecutorId>forked-path</mavenExecutorId>
             <autoVersionSubmodules>true</autoVersionSubmodules>
@@ -163,42 +159,28 @@
 
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>2.6</version>
+          <version>3.1.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>3.0.1</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.16</version>
+          <version>2.22.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>2.16</version>
+          <version>2.22.0</version>
         </plugin>
 
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
-          <version>2.4</version>
+          <version>3.2.2</version>
           <configuration>
-            <archive>
-              <manifest>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-              </manifest>
-            </archive>
-          </configuration>
-        </plugin>
-
-        <plugin>
-          <artifactId>maven-ear-plugin</artifactId>
-          <version>2.9</version>
-          <configuration>
-            <version>5</version>
-            <defaultLibBundleDir>lib</defaultLibBundleDir>
             <archive>
               <manifest>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -209,7 +191,7 @@
 
         <plugin>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.4</version>
+          <version>3.5.2</version>
           <executions>
             <!-- Required if annotation processing is used -->
             <execution>
@@ -228,13 +210,13 @@
 
         <plugin>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.4</version>
+          <version>1.6</version>
         </plugin>
 
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.6.3.201306030806</version>
+          <version>0.8.2</version>
           <configuration>
             <destFile>${project.build.directory}/target/jacoco.exec</destFile>
           </configuration>
@@ -333,7 +315,7 @@
                   <version>[3.0.4,)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[1.6,)</version>
+                  <version>[1.8,)</version>
                 </requireJavaVersion>
                 <DependencyConvergence />
               </rules>
