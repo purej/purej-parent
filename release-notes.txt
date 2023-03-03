@@ -1,3 +1,6 @@
+Version 1.6 (03.03.2023)
+- Upgraded all plugins to latest version
+
 Version 1.5 (03.10.2018)
  - Upgraded all plugin versions
  - Added manifest entry for future java 11 module classpath (property module.name MUST be provided!)
@@ -23,4 +26,3 @@ Version 1.1 (29.12.2013)
 
 Version 1.0 (28.12.2013)
  - Initial version
- 
