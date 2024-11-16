@@ -111,6 +111,7 @@
           <configuration>
             <source>${jdkVersion}</source>
             <target>${jdkVersion}</target>
+            <release>${jdkVersion}</release>
             <compilerArgument>-Xlint:all</compilerArgument>
             <showWarnings>true</showWarnings>
             <showDeprecation>true</showDeprecation>

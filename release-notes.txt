@@ -1,4 +1,7 @@
-Version 2.0 (16.11.2024)
+Current
+- Set release compiler option
+
+Version 1.7 (16.11.2024)
 - Upgraded all plugins to latest version
 - Set java 11 as default and minium version
 
