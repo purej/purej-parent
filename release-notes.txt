@@ -1,3 +1,7 @@
+Version 2.0 (16.11.2024)
+- Upgraded all plugins to latest version
+- Set java 11 as default and minium version
+
 Version 1.6 (03.03.2023)
 - Upgraded all plugins to latest version
 

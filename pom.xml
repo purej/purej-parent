@@ -18,31 +18,31 @@
     <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
     <!-- Jdk Version - might be overwritten by extending projects -->
-    <jdkVersion>1.8</jdkVersion>
+    <jdkVersion>11</jdkVersion>
 
     <!-- Default value - MUST be overwritten by extending projects! -->
     <module.name>undefined</module.name>
 
     <!-- All plugin versions, might be overwritten by deriving poms -->
-    <maven-assembly-plugin.version>3.5.0</maven-assembly-plugin.version>
-    <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
-    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-    <maven-dependency-plugin.version>3.5.0</maven-dependency-plugin.version>
-    <maven-deploy-plugin.version>3.1.0</maven-deploy-plugin.version>
-    <maven-enforcer-plugin.version>3.2.1</maven-enforcer-plugin.version>
-    <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
-    <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-    <maven-help-plugin.version>3.3.0</maven-help-plugin.version>
-    <maven-install-plugin.version>3.1.0</maven-install-plugin.version>
-    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
-    <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
-    <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-    <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
-    <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-    <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
-    <maven-plugin-plugin.version>3.8.1</maven-plugin-plugin.version>
-    <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+    <maven-assembly-plugin.version>3.7.1</maven-assembly-plugin.version>
+    <maven-clean-plugin.version>3.4.0</maven-clean-plugin.version>
+    <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+    <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
+    <maven-deploy-plugin.version>3.1.3</maven-deploy-plugin.version>
+    <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
+    <maven-failsafe-plugin.version>3.5.2</maven-failsafe-plugin.version>
+    <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+    <maven-help-plugin.version>3.5.1</maven-help-plugin.version>
+    <maven-install-plugin.version>3.1.3</maven-install-plugin.version>
+    <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
+    <maven-release-plugin.version>3.1.1</maven-release-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
+    <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+    <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
   </properties>
 
   <inceptionYear>2013</inceptionYear>
@@ -61,7 +61,7 @@
   <developers>
     <developer>
       <name>Stefan Mueller</name>
-      <email>s1@muellair.com</email>
+      <email>stefan@muellair.com</email>
       <organization>adopus consulting gmbh, Switzerland</organization>
       <roles>
         <role>Owner</role>
@@ -315,10 +315,10 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>[3.0.4,)</version>
+                  <version>[3.2.5,)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[1.8,)</version>
+                  <version>[11,)</version>
                 </requireJavaVersion>
                 <DependencyConvergence />
               </rules>
