@@ -1,7 +1,8 @@
 Current
 
-Version 1.8 (19.11.2025)
+Version 1.9 (19.11.2025)
 - Upgraded all plugins to latest version
+- Enable central-publishing-maven-plugin to publish to maven-central
 - Set release compiler option
 
 Version 1.7 (16.11.2024)

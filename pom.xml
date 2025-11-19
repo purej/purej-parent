@@ -4,7 +4,7 @@
 
   <groupId>com.purej</groupId>
   <artifactId>purej-parent</artifactId>
-  <version>1.8</version>
+  <version>1.9</version>
   <packaging>pom</packaging>
 
   <name>PureJ parent POM</name>
@@ -43,6 +43,7 @@
     <maven-war-plugin.version>3.5.0</maven-war-plugin.version>
     <maven-plugin-plugin.version>3.15.2</maven-plugin-plugin.version>
     <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
   </properties>
 
   <inceptionYear>2013</inceptionYear>
@@ -75,26 +76,9 @@
     <url>http://github.com/purej/purej-parent</url>
   </scm>
 
-  <!-- This section configures the snapshot / release repositories -->
-  <!-- Note: The Maven-Settings have to contain the Sonatype user/password 
-    for uploading! -->
-  <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
   <build>
-
-    <!-- This section configures the versions and global settings of the 
-      commonly used (maven-)plugins -->
+    <!-- This section configures the versions and global settings of the commonly used (maven-)plugins -->
     <pluginManagement>
       <plugins>
         <plugin>
@@ -233,6 +217,17 @@
           </executions>
         </plugin>
 
+        <!-- Required to publish to central -->
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>${central-publishing-maven-plugin.version}</version>
+          <extensions>true</extensions>
+          <configuration>
+           <publishingServerId>central</publishingServerId>
+          </configuration>
+        </plugin>
+
         <!-- Stores m2e settings to prevent eclipse-warnings -->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
@@ -342,8 +337,13 @@
         </executions>
       </plugin>
 
-    </plugins>
+      <!-- Publish to central -->
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+      </plugin>
 
+    </plugins>
   </build>
 
 </project>

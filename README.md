@@ -11,3 +11,4 @@ The following plugins are automatically executed:
 * javadoc-plugin: to produce a -javadoc.jar
 * enforcer-plugin: to prevent conflicting transitive dependencies
 * gpg-plugin: to automatically sign generated artefacts (required by Maven Central)
+* central-publishing-maven-plugin: to upload artefacts to maven-central (https://central.sonatype.com)
