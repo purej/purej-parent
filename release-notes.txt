@@ -1,4 +1,7 @@
 Current
+
+Version 1.8 (19.11.2025)
+- Upgraded all plugins to latest version
 - Set release compiler option
 
 Version 1.7 (16.11.2024)
